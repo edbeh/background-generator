@@ -1,0 +1,80 @@
+body {
+	font-family: Helvetica;
+	color: rgba(0, 0, 0, .5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	background: linear-gradient(to right, rgb(0,255,0), rgb(255,0,0));
+	/*	background-repeat: no-repeat;*/
+	height: 100vh;
+	/* Standard syntax */
+}
+
+h1 {
+	font-weight: bolder;
+	color: rgba(0, 0, 0, .5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	width: 100%;
+}
+
+h3 {
+	color: rgba(0, 0, 0, .5);
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 0.01em;
+	font-size: 0.7em;
+}
+
+div {
+	width: 100%;
+}
+
+.button {
+	padding: 5px;
+	padding-left: 10px;
+	margin: 10px;
+	color: white;
+	background: black;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.button:hover {
+	background: #A9A9A9;
+	border-color: #A9A9A9;
+}
+
+#dropdownMenu {
+	position: absolute;
+	/*
+	display: flex;
+	flex-direction: column;
+*/
+	width: 200px;
+	margin: auto;
+	left: 50%;
+	margin-left: -100px;
+	list-style: none;
+	text-transform: none;
+	letter-spacing: normal;
+	padding: 0px;
+	/*	z-index: 1;*/
+	background-color: white;
+}
+
+.show {
+	display: none;
+}
+
+.dropdownItems {
+	padding: 5px;
+	background: black;
+	color: white;
+}
+
+.dropdownItems:hover {
+	background-color: grey;
+}
