@@ -5,6 +5,8 @@ var cssCode = document.querySelector("h3");
 var btnDirection = document.querySelector("#direction");
 var dropdownMenu = document.getElementById("dropdownMenu");
 var btnRandom = document.querySelector("#random");
+var btnCopy = document.querySelector("#copy");
+
 
 //Set colors of linear-gradient
 function setGradient() {
@@ -17,7 +19,7 @@ color2.addEventListener("input", setGradient);
 
 btnDirection.addEventListener("click", function () {
 	dropdownMenu.classList.toggle("show");
-})
+});
 
 //Choose direction of linear-gradient
 dropdownMenu.addEventListener("click", function (event) {
@@ -36,3 +38,13 @@ btnRandom.addEventListener("click", function () {
 	color2.value = randomColor();
 	setGradient();
 })
+
+
+//Copy css code
+function copyCss() {
+	alert(cssCode.textContent);
+	cssCode.textContent.select();
+	document.execCommand("copy");
+}
+
+btnCopy.addEventListener("click", copyCss);
